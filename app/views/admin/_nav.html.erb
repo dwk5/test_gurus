@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark bg-primary">
+  <span class="navbar-brand">TestGuru Admin Panel</span>
+
+  <span class="navbar-text">
+    Welcome, <b><%= current_user.email %></b> |
+    <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+  </span>
+</nav>

@@ -1,0 +1,101 @@
+en:
+  hello: "Hello world"
+
+  helpers:
+    submit:
+      test:
+        create: "Create test"
+        update: "Update test"
+    label:
+      test:
+        title: "Title"
+        level: "Level"
+        category_id: "Category"
+    select:
+      new:
+        prompt: "Please select"
+
+  shared:
+    errors:
+      header:
+        one: "%{count} error detected"
+        other: "%{count} errors detected"
+
+  tests:
+    index:
+      header: "Tricky tests"
+      title: "Title"
+      level: "Level"
+      questions_count: "Questions count"
+      action: "Action"
+    start:
+      begin: "Start"
+
+  test_passages:
+    result:
+      header: "The %{title} test was Completed!"
+      score: "Your score:"
+      positive_msg: "Congratulations, the test is passed!"
+      negative_msg: "Test failed, try again."
+      tests_list: "Tests list"
+    show:
+      header: "Passing %{title} test"
+      question: "Question %{question}"
+      next: "Next"
+    gist:
+      success_html: "Gist was successfully created!<a href='%{gist_url}' target='_blank'>See here</a> "
+      failure: "A error occurred while saving gist"
+
+  admin:
+    tests:
+      show:
+        title: "Title"
+        level: "Level"
+        category_id: "Category"
+        header: "Test questions."
+        new_question: "New question"
+        question_column: "Question"
+        action: "Actions"
+        edit_link: "Edit"
+        back_link: "Back"
+      new:
+        header: "New test creation"
+        back_link: "Back"
+      edit:
+        header: "Editing test:"
+        back_link: "Back"
+      create:
+        success: "Test was successfully created."
+      update:
+        success: "Test was successfully update."
+      index:
+        header: "Tricky tests"
+        title: "Title"
+        level: "Level"
+        questions_count: "Questions count"
+        action: "Actions"
+        new_test_link: "New test"
+      test:
+        show_test: "Show"
+        edit_test: "Edit"
+        delete_test: "Delete"
+      form_inline:
+        submit: "OK"
+    questions:
+      question:
+        show_question: "Show"
+        edit_question: "Edit"
+        delete_question: "Delete"
+    gists:
+      index:
+        question: "Question"
+        gist_link: "Gist link"
+        user_email: "User Email"
+
+  tests_mailer:
+    completed_test:
+      subject: "You just completed the TestGuru test!"
+
+  services:
+    gist_question:
+      description: "Test question: %{title} from TestGuru"

@@ -1,0 +1,23 @@
+<div class="row justify-content-center mt-3">
+  <div class="col col-md-5">
+
+    <h2 class="text-center"><%= t('tests.index.header') %></h2>
+
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th class="sort-by-title pointer">
+            <%= t('tests.index.title') %>
+            <%= octicon 'arrow-up', class: 'text-success hide' %>
+            <%= octicon 'arrow-down', class: 'text-success hide' %>
+          </th>
+          <th><%= t('tests.index.level') %></th>
+          <th><%= t('tests.index.questions_count') %></th>
+          <th><%= t('tests.index.action') %></th>
+        </tr>
+      </thead>
+
+     <%= render @tests %>
+    </table>
+  </div>
+</div>

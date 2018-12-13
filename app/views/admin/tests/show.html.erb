@@ -1,0 +1,30 @@
+<p>
+  <strong><%= t('.title') %>:</strong>
+  	&#171;<%= @test.title %>&#187;
+</p>
+
+<p>
+  <strong><%= t('.level') %>:</strong>
+  <%= @test.level %>
+</p>
+
+<p>
+  <strong><%= t('.category_id') %>:</strong>
+  &#171;<%= @test.category.title%>&#187;
+</p>
+
+<h3><%= t('.header') %></h3>
+<p>
+  <%= link_to t('.new_question'), new_admin_test_question_path(@test) %>
+</p>
+<table>
+  <tr>
+    <th><%= t('.question_column') %></th>
+    <th colspan="4"><%= t('.action') %></th>
+  </tr>
+
+ <%= render @test.questions %>
+</table>
+<p></p>
+<%= link_to t('.edit_link'), edit_admin_test_path(@test) %> |
+<%= link_to t('.back_link'), admin_tests_path %>

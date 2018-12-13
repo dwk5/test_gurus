@@ -1,0 +1,15 @@
+<h2><%= t('.header', title: @test_passage.test.title) %><h2>
+
+<p>
+  <% if @test_passage.test_passed? %>
+    <%= t('.score') %>
+    <span class="positive"><%= @test_passage.score_percentage%>%!</span>
+    <%= t('.positive_msg') %>
+  <% else %>
+    <%= t('.score') %>
+    <span class="negative"><%= @test_passage.score_percentage%>%!</span>!
+    <%= t('.negative_msg') %>
+  <% end %>
+</p>
+
+<p><%= link_to t('.tests_list'), tests_path %></p>

@@ -67,8 +67,10 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'test-gurus.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
+    tls:                   true,
     address:               'smtp.yandex.ru',
     port:                  465,
+    domain:                'yandex.ru',
     user_name:             ENV['SMTP_USERNAME'],
     password:              ENV['SMTP_PASSWORD'],
     authentication:        'plain',

@@ -1,0 +1,15 @@
+<%= form_with model: @contact, local: true do |form| %>
+  <%= render 'shared/errors', resource: @contact %>
+
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email, id: :contact_email, size: 40 %>
+  </p>
+
+  <p>
+    <%= form.label :body%><br>
+    <%= form.text_area :body, id: :contact_body, rows: 6, cols: 40%>
+  </p>
+
+  <p><%= form.submit "Send", class: 'btn btn-primary mt-2'%></p>
+<% end %>

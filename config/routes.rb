@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :contacts, only: %i[create new]
+
   namespace :admin do
     resources :tests do
       patch :update_inline, on: :member
